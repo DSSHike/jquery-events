@@ -28,5 +28,9 @@ $("#offevent").click(function(){
 $("#offevent2").click(function(){
     $("#box2").off("mouseover mouseout")
 });
+
+$("#backtotop").click(function(){
+    window.scrollTo({ top: 0, left:0, behavior: 'smooth' });
+});
     });              
     
