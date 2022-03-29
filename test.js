@@ -20,5 +20,13 @@ $(document).ready(function(){
             $(this).css("background","green")
         } 
     });
+
+$("#offevent").click(function(){
+    $("#box1").off("mouseover mouseout")
+});
+
+$("#offevent2").click(function(){
+    $("#box2").off("mouseover mouseout")
+});
     });              
     
