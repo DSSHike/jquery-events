@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#box1{border: 2px solid red; padding: 30px;text-transform: uppercase;}
+#box2{border: 2px solid red; padding: 30px;text-transform: uppercase;}
+
+</style>
+</head>
+<body>
+<h1>Jquery On Method</h1>
+<div id="box1">
+
+<h2>this is box</h2>
+
+<p>this is the test of script functions and jquery code</p>
+
+</div>
+
+<div id="box2">
+
+    <h2>this is box</h2>
+    
+    <p>this is the test of script functions and jquery code</p>
+    
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#box1").on({
+    "click": function(){
+        $(this).css("background","red")
+    }, 
+    "mouseover": function(){
+        $(this).css("background","green")
+    },
+    "mouseout":function(){
+        $(this).css("background","blue")
+    } 
+});$("#box2").on({
+    "click": function(){
+        $(this).css("background","red")
+    }, 
+    "mouseover": function(){
+        $(this).css("background","blue")
+    },
+    "mouseout":function(){
+        $(this).css("background","green")
+    } 
+});
+});              
+
+</script>
+</body>
+</html>
